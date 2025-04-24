@@ -1,0 +1,9 @@
+aiohttp>=3.7.0
+attrs>=20.3.0
+cffi>=1.14.0
+numpy>=1.19.0
+pyee>=8.1.0
+pyopenssl>=19.1.0
+pytz>=2020.4
+six>=1.15.0
+websockets>=8.1
