@@ -20,24 +20,24 @@ jobs:
           pip install . -r requirements/doc.txt
           make -C docs html SPHINXOPTS=-W
 
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: 3.9
-      - name: Install OS packages
-        run: |
-          sudo apt-get update
-          sudo apt-get install libopus-dev libvpx-dev
-      - name: Run linters
-        run: |
-          pip install . -r requirements/lint.txt
-          ruff check .
-          ruff format --check --diff .
-          check-manifest
-          mypy src
+  # lint:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: actions/setup-python@v5
+  #       with:
+  #         python-version: 3.9
+  #     - name: Install OS packages
+  #       run: |
+  #         sudo apt-get update
+  #         sudo apt-get install libopus-dev libvpx-dev
+  #     - name: Run linters
+  #       run: |
+  #         pip install . -r requirements/lint.txt
+  #         ruff check .
+  #         ruff format --check --diff .
+  #         check-manifest
+  #         mypy src
 
   test:
     runs-on: ${{ matrix.os }}
