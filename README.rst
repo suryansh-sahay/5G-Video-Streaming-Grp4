@@ -1,3 +1,14 @@
+.. note::
+
+   - 🎬 **Group 4 - 5G Lab Project Demo Video**
+   - 🧑‍💻 Real-Time Video Streaming over 5G using WebRTC
+   - In this video, we have eplained our implementation, simulation and demonstrate the browser-based WebRTC stream etc.
+   - 🔗 `Watch the full demo on Google Drive`_.
+
+.. _Watch the full demo on Google Drive: https://drive.google.com/file/d/1i2C5dJDoefxY7e-JB0nRrMs0CRuqpow8/view?usp=sharing
+
+
+
 .. image:: docs/_static/aiortc.svg
    :width: 120px
    :alt: aiortc
